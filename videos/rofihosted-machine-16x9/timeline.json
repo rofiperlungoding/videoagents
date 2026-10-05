@@ -1,0 +1,309 @@
+{
+  "note": "Single source of truth for picture + sound. Everything is in BEATS on the measured grid (beats.json). film.js reads marks via data.js; sync.mjs turns sfx events into cues.json; music.py reads music.sections.",
+  "title": "rofihosted: The Machine (60 s, 16:9)",
+  "duration": 60,
+  "fps": 60,
+  "bpm": 96,
+  "formats": [
+    "16x9"
+  ],
+  "music": {
+    "source": "scripts/score.py (original, B minor, 96 BPM)",
+    "key": "B minor",
+    "seed": 808,
+    "sections": [
+      {
+        "bars": "1-4",
+        "kind": "intro"
+      },
+      {
+        "bars": "5-6",
+        "kind": "pulse"
+      },
+      {
+        "bars": "7-8",
+        "kind": "build"
+      },
+      {
+        "bars": "9-16",
+        "kind": "full"
+      },
+      {
+        "bars": "17-18",
+        "kind": "night"
+      },
+      {
+        "bars": "19-20",
+        "kind": "morning"
+      },
+      {
+        "bars": "21-22",
+        "kind": "climax"
+      },
+      {
+        "bars": "23-24",
+        "kind": "end"
+      }
+    ]
+  },
+  "voiceover": null,
+  "marks": {
+    "hook": 0,
+    "t1": -0.4,
+    "t2": 4,
+    "port": 8,
+    "plug": 10,
+    "spec1": 12,
+    "spec2": 14,
+    "desk": 16,
+    "desk1": 18,
+    "desk2": 20,
+    "wake": 24,
+    "bloom": 26,
+    "also": 28,
+    "drop": 32,
+    "stack": 32,
+    "l1": 33,
+    "l2": 34,
+    "l3": 35,
+    "l4": 36,
+    "l5": 37,
+    "collapse": 39.5,
+    "reach": 40,
+    "beam": 41,
+    "r1": 42,
+    "r2": 44,
+    "work": 48,
+    "type_from": 48.5,
+    "type_to": 51,
+    "send": 51.5,
+    "s1": 52,
+    "s2": 53,
+    "s3": 54,
+    "s4": 55,
+    "code": 56,
+    "cmd_from": 56.5,
+    "cmd_to": 58,
+    "compile": 58,
+    "compiled": 60.5,
+    "rss": 62,
+    "night": 64,
+    "sleep1": 65,
+    "sleep2": 67,
+    "m1": 68,
+    "m2": 69,
+    "m3": 70,
+    "morning": 72,
+    "bars": 73,
+    "pct": 74,
+    "checked": 77,
+    "no1": 80,
+    "no2": 82,
+    "no3": 84,
+    "no4": 86,
+    "gap": 87,
+    "hero": 88,
+    "hero2": 89,
+    "lockup": 92,
+    "url": 93,
+    "done": 96
+  },
+  "sfx": [
+    {
+      "at": "plug",
+      "type": "click",
+      "gain": 0.6,
+      "what": "USB-C cable clicks in"
+    },
+    {
+      "at": "spec1",
+      "type": "tick",
+      "gain": 0.45,
+      "what": "8 cores"
+    },
+    {
+      "at": "spec2",
+      "type": "tick",
+      "gain": 0.45,
+      "what": "3 GB of RAM"
+    },
+    {
+      "at": "wake",
+      "type": "pop",
+      "gain": 0.55,
+      "what": "screen wakes"
+    },
+    {
+      "at": "l1",
+      "type": "click",
+      "gain": 0.45,
+      "what": "layer Linux"
+    },
+    {
+      "at": "l2",
+      "type": "click",
+      "gain": 0.45,
+      "what": "layer sandbox"
+    },
+    {
+      "at": "l3",
+      "type": "click",
+      "gain": 0.45,
+      "what": "layer gateway"
+    },
+    {
+      "at": "l4",
+      "type": "click",
+      "gain": 0.45,
+      "what": "layer memory"
+    },
+    {
+      "at": "l5",
+      "type": "click",
+      "gain": 0.45,
+      "what": "layer tunnel"
+    },
+    {
+      "at": "collapse",
+      "type": "whoosh",
+      "gain": 0.5,
+      "what": "layers collapse back into the tablet"
+    },
+    {
+      "at": "beam",
+      "type": "whoosh",
+      "gain": 0.5,
+      "what": "beam leaves the tablet"
+    },
+    {
+      "at": 48.5,
+      "to": 51,
+      "every": 0.25,
+      "type": "tick",
+      "gain": 0.28,
+      "what": "typing the request"
+    },
+    {
+      "at": "send",
+      "type": "click",
+      "gain": 0.7,
+      "what": "send"
+    },
+    {
+      "at": "s1",
+      "type": "tick",
+      "gain": 0.5,
+      "what": "step 1"
+    },
+    {
+      "at": "s2",
+      "type": "tick",
+      "gain": 0.5,
+      "what": "step 2"
+    },
+    {
+      "at": "s3",
+      "type": "tick",
+      "gain": 0.5,
+      "what": "step 3"
+    },
+    {
+      "at": "s4",
+      "type": "tick",
+      "gain": 0.5,
+      "what": "step 4"
+    },
+    {
+      "at": 56.5,
+      "to": 58,
+      "every": 0.25,
+      "type": "tick",
+      "gain": 0.28,
+      "what": "typing the command"
+    },
+    {
+      "at": "compiled",
+      "type": "pop",
+      "gain": 0.65,
+      "what": "compiled"
+    },
+    {
+      "at": "night",
+      "type": "shutter",
+      "gain": 0.4,
+      "what": "lamp off"
+    },
+    {
+      "at": "m1",
+      "type": "tick",
+      "gain": 0.4,
+      "what": "memory 1"
+    },
+    {
+      "at": "m2",
+      "type": "tick",
+      "gain": 0.4,
+      "what": "memory 2"
+    },
+    {
+      "at": "m3",
+      "type": "tick",
+      "gain": 0.4,
+      "what": "memory 3"
+    },
+    {
+      "at": "no1",
+      "type": "shutter",
+      "gain": 0.55,
+      "what": "No subscription."
+    },
+    {
+      "at": "no2",
+      "type": "shutter",
+      "gain": 0.55,
+      "what": "No telemetry."
+    },
+    {
+      "at": "no3",
+      "type": "shutter",
+      "gain": 0.55,
+      "what": "No open ports."
+    },
+    {
+      "at": "no4",
+      "type": "shutter",
+      "gain": 0.6,
+      "what": "Just yours."
+    },
+    {
+      "at": "lockup",
+      "type": "pop",
+      "gain": 0.6,
+      "what": "mark pops"
+    },
+    {
+      "at": 93,
+      "to": 94.5,
+      "every": 0.25,
+      "type": "tick",
+      "gain": 0.28,
+      "what": "typing the URL"
+    }
+  ],
+  "brand": {
+    "product": "rofihosted",
+    "url": "https://rofihosted.space",
+    "promise": "A personal server and AI assistant running entirely on a single tablet.",
+    "hook": "One tablet. A real server.",
+    "cta": "rofihosted.space",
+    "audience": "Reels / Shorts / TikTok (9:16), devs and students, sound on",
+    "must_show": "the tablet as a real server, the real UI (composer, live activity steps, verified file card, memory), the logo mark with its status dot",
+    "must_avoid": "cheesy buzzwords (revolutionary, blazing fast, magic), pure black #000 on lime, generic SaaS purple/blue, rainbow or cyan logo fills"
+  },
+  "mix": {
+    "music": 0,
+    "sfx": -5,
+    "vo": 0,
+    "duck": false
+  }
+}

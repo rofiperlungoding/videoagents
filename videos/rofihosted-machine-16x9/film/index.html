@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>motion reel</title>
+<style>
+  /* One display face, one UI face. Point these at the brand's real files in assets/fonts/ (capture.mjs lists them). */
+  @font-face { font-family: 'Display'; src: url(../assets/fonts/display.woff2) format('woff2'); font-weight: 100 900; }
+  @font-face { font-family: 'UI'; src: url(../assets/fonts/ui.woff2) format('woff2'); font-weight: 100 900; }
+  /* inside the product only (real UI fidelity): the assistant's voice and the step tags / telemetry */
+  @font-face { font-family: 'Serif'; src: url(../assets/fonts/serif.woff2) format('woff2'); font-weight: 100 900; }
+  @font-face { font-family: 'Mono'; src: url(../assets/fonts/mono.woff2) format('woff2'); font-weight: 100 900; }
+  :root {
+    /* style guide tokens: ONE accent unless the brief says otherwise */
+    --bg: #0a0b0d; --ink: #f7f8f8; --ink-2: #a0a4ad; --ink-3: #686d77; --accent: #a3e635; --lime-1: #bef264;
+    --lime-hi: #c8f56e; --brand-ink: #14310a; --s1: #121316; --s2: #181a1e; --s3: #202329; --line: #26292f; --ok: #4ade80;
+    --card: #181a1e;
+  }
+  html, body { margin: 0; background: #000; overflow: hidden; }
+  #stage { position: relative; overflow: hidden; background: var(--bg); transform-origin: 0 0;
+           font-family: 'UI', 'Helvetica Neue', Arial, sans-serif; color: var(--ink);
+           -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+  .scene { position: absolute; inset: 0; overflow: hidden; }
+  .abs { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  .display { font-family: 'Display', 'Helvetica Neue', Arial, sans-serif; font-weight: 600; letter-spacing: -0.035em;
+             line-height: 0.95; white-space: nowrap; }
+  /* a line is a mask: words rise through it. Padding keeps descenders; start words >= 140% below so no sliver shows. */
+  .line { position: absolute; overflow: hidden; padding: 0.08em 0.04em 0.18em; margin: -0.08em -0.04em 0; white-space: nowrap; }
+  .word { display: inline-block; }
+  .card { position: absolute; background: var(--card); border-radius: 28px;
+          box-shadow: 0 2px 6px rgba(0,0,0,.05), 0 30px 80px -20px rgba(0,0,0,.22); }
+  .serif { font-family: 'Serif', Georgia, serif; font-weight: 500; letter-spacing: -0.01em; line-height: 1.05; white-space: nowrap; }
+  .mono { font-family: 'Mono', ui-monospace, monospace; }
+  /* a centred masked line (kinetic type is centred: approved reference override, docs/style_guide.md §2) */
+  .cl { display: inline-block; position: relative; overflow: hidden; padding: 0.08em 0.05em 0.2em; margin: -0.08em -0.05em 0;
+        white-space: nowrap; vertical-align: top; }
+  .caret { display: inline-block; width: 0.07em; height: 0.86em; margin-right: -0.07em; vertical-align: -0.1em; background: var(--accent); }
+  .ghost { color: transparent; }
+  .sel { background-image: linear-gradient(var(--accent), var(--accent)); background-repeat: no-repeat;
+         -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+  .pill { position: absolute; display: flex; align-items: center; gap: 18px; padding: 26px 36px; border-radius: 28px;
+          background: var(--s2); border: 1.5px solid var(--line); font-size: 40px; color: var(--ink); white-space: nowrap;
+          box-shadow: 0 30px 80px -20px rgba(0,0,0,.6); }
+  .panel { position: absolute; background: var(--s1); border: 1.5px solid var(--line); border-radius: 36px;
+           box-shadow: 0 40px 120px -30px rgba(0,0,0,.8); }
+  .tag { font-family: 'Mono', monospace; font-weight: 700; color: var(--lime-1); letter-spacing: 0.04em; }
+  .hud { position: absolute; font-family: 'Mono', monospace; font-size: 40px; color: var(--ink); white-space: nowrap; }
+  .hud b { color: var(--accent); font-weight: 500; }
+  body.play { display: block; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script src="lib/motion.js"></script>
+<script src="data.js"></script>
+<script src="core.js"></script>
+<script src="type.js"></script>
+<script src="film.js"></script>
+</body>
+</html>
