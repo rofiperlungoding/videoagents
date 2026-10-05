@@ -17,7 +17,8 @@ and `docs/reference_notes.md` (Numtera, Google, Doks.AI, NeuraFlow, LangEase, Sb
 Light rhythm = OLED black ↔ lime flood (the brand has no white mode, so lime plays Numtera's white sections).
 
 ## 2. Type
-- **Space Grotesk 700, −0.03em**: every headline and kinetic word (display face).
+- **Inter Tight 600, −0.035em**: every headline and kinetic word (display face). The user replaced the brand's Space Grotesk
+  for this film ("Apple-like"); Inter Tight is the closest free face to SF Pro.
 - **Inter 400–600**: UI chrome and the user's words (UI face).
 - Inside the product only (real UI fidelity): **Fraunces** (SOFT 60) for the assistant's voice and the memory line,
   **JetBrains Mono** for step tags, telemetry, code, the URL.

@@ -1,6 +1,6 @@
 # Shotlist: rofihosted "The Proof" · 60 s · 112 BPM · 112 beats (28 bars) · 9:16
 
-STATUS: DRAFT — waiting for the user's OK. Nothing gets built until this says APPROVED.
+STATUS: APPROVED by the user (shotlist as is, music v1).
 
 One idea every 2–4 beats (1–2 s), continuous camera, almost no hard cuts (the references average 1.3–2.1 visual
 changes per second with few cuts). Copy in English, from PUNCHLINES.md / GUIDELINES.md. Real UI rebuilt in English from

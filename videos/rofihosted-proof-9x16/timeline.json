@@ -53,10 +53,10 @@
   "marks": {
     "hook": 0,
     "type1_from": -0.5,
-    "type1_to": 3,
-    "type2_from": 3.25,
-    "type2_to": 5.5,
-    "select": 5.75,
+    "type1_to": 2.25,
+    "type2_from": 2.5,
+    "type2_to": 4.25,
+    "select": 4.5,
     "frag1": 8,
     "frag2": 10,
     "frag3": 12,
@@ -140,15 +140,15 @@
     },
     {
       "at": 0.5,
-      "to": 3,
+      "to": 2.25,
       "every": 0.25,
       "type": "tick",
       "gain": 0.28,
       "what": "typing line 1"
     },
     {
-      "at": 3.25,
-      "to": 5.5,
+      "at": 2.5,
+      "to": 4.25,
       "every": 0.25,
       "type": "tick",
       "gain": 0.28,
