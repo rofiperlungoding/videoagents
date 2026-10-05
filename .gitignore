@@ -2,7 +2,14 @@ node_modules/
 .venv/
 .env
 .env.*
-videos/
 *.wav
 *.npy
 .DS_Store
+# film projects (videos/<slug>): keep the source, docs and final deliverables;
+# drop drafts, clips, review kits and stills, which every run regenerates
+videos/_test-*/
+videos/*/node_modules
+videos/*/review/
+videos/*/renders/draft_*.mp4
+videos/*/renders/clip_*.mp4
+videos/*/renders/*.tmp.mp4

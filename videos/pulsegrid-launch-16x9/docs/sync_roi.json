@@ -1,0 +1,164 @@
+{
+ "\"metrics\"": [
+  640,
+  260,
+  820,
+  260
+ ],
+ "\"are\"": [
+  130,
+  510,
+  360,
+  260
+ ],
+ "\"late.\"": [
+  500,
+  510,
+  460,
+  260
+ ],
+ "accent line strikes through \"late.\"": [
+  500,
+  600,
+  460,
+  60
+ ],
+ "\"live.\" rises in the accent": [
+  500,
+  510,
+  460,
+  260
+ ],
+ "live dot lights up": [
+  900,
+  560,
+  100,
+  100
+ ],
+ "cursor clicks Connect data": [
+  1090,
+  464,
+  460,
+  152
+ ],
+ "toggle Product events": [
+  1580,
+  430,
+  110,
+  70
+ ],
+ "toggle Payments": [
+  1580,
+  542,
+  110,
+  70
+ ],
+ "toggle Warehouse": [
+  1580,
+  654,
+  110,
+  70
+ ],
+ "sync done, check": [
+  1000,
+  490,
+  110,
+  110
+ ],
+ "KPI tile 1": [
+  860,
+  290,
+  300,
+  170
+ ],
+ "KPI tile 2": [
+  1171,
+  290,
+  300,
+  170
+ ],
+ "KPI tile 3 (signups)": [
+  1482,
+  290,
+  300,
+  170
+ ],
+ "the dip gets flagged, tooltip pops": [
+  1380,
+  520,
+  480,
+  300
+ ],
+ "cursor clicks Ask why": [
+  1500,
+  650,
+  200,
+  80
+ ],
+ "send": [
+  1690,
+  420,
+  90,
+  90
+ ],
+ "answer lands": [
+  850,
+  400,
+  600,
+  60
+ ],
+ "breakdown bar iOS": [
+  850,
+  600,
+  700,
+  50
+ ],
+ "breakdown bar Web": [
+  850,
+  652,
+  700,
+  50
+ ],
+ "breakdown bar Android": [
+  850,
+  704,
+  700,
+  50
+ ],
+ "cursor clicks Create alert": [
+  1500,
+  760,
+  300,
+  90
+ ],
+ "alert on": [
+  1500,
+  760,
+  300,
+  90
+ ],
+ "3 sec lands": [
+  900,
+  380,
+  300,
+  280
+ ],
+ "strike through was 3 days": [
+  940,
+  700,
+  220,
+  44
+ ],
+ "end card lands": [
+  0,
+  0,
+  1920,
+  1080
+ ],
+ "CTA": [
+  120,
+  700,
+  520,
+  200
+ ]
+}

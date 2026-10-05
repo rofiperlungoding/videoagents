@@ -2,6 +2,10 @@ Get weekly updates on the latest AI workflows to 10x your productivity: https://
 
 ![Motion Reel Kit](cover.png)
 
+> **In this repo:** a finished example made with the kit: [`videos/pulsegrid-launch-16x9`](videos/pulsegrid-launch-16x9/README.md),
+> a 20-second 16:9 launch ad for **Pulsegrid**, a fictional analytics SaaS (final: `videos/pulsegrid-launch-16x9/renders/16x9.mp4`).
+> Its brand preset is `presets/pulsegrid`. Every number on screen is demo data.
+
 # Motion Reel Kit
 
 Beat-synced motion graphics made entirely in code, directed by Claude Code.

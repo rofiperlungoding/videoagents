@@ -1,0 +1,28 @@
+0.500s  pop     reads    50 ms  "metrics"
+1.000s  pop     reads    50 ms  "are"
+1.500s  pop     reads    50 ms  "late."
+2.000s  shutter onset     0 ms  accent line strikes through "late."
+2.500s  pop     reads   -50 ms  "live." rises in the accent
+3.000s  pop     reads    17 ms  live dot lights up
+4.500s  click   onset     0 ms  cursor clicks Connect data
+5.245s  click   onset     5 ms  toggle Product events
+5.500s  click   onset     0 ms  toggle Payments
+5.746s  click   onset     4 ms  toggle Warehouse
+7.000s  pop     reads   -17 ms  sync done, check
+8.245s  pop     reads  -145 ms  KPI tile 1
+8.500s  pop     reads    17 ms  KPI tile 2
+8.746s  pop     reads     4 ms  KPI tile 3 (signups)
+10.500s  pop     reads    50 ms  the dip gets flagged, tooltip pops
+11.245s  click   onset     5 ms  cursor clicks Ask why
+13.493s  click   onset     7 ms  send
+14.000s  pop     reads   -67 ms  answer lands
+14.246s  pop     reads  -196 ms  breakdown bar iOS
+14.491s  pop     reads    -8 ms  breakdown bar Web
+14.741s  pop     reads    -8 ms  breakdown bar Android
+15.245s  click   onset     5 ms  cursor clicks Create alert
+15.500s  pop     reads    17 ms  alert on
+16.245s  pop     reads  -195 ms  3 sec lands
+17.000s  shutter onset     0 ms  strike through was 3 days
+18.000s  thump   reads   -17 ms  end card lands
+18.746s  pop     reads   -13 ms  CTA
+18/27 hits within ±45 ms of their sound (60 fps, 16.7 ms resolution); worst 196 ms

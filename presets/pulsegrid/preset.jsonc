@@ -1,0 +1,50 @@
+// PULSEGRID: a FICTIONAL analytics SaaS used to demo the kit. There is no real site, so there is no
+// capture step and the product UI is designed from scratch in film.js. Swap this preset for your own brand.
+//   sh .claude/skills/motion-reel/scripts/init.sh videos/<slug> --preset presets/pulsegrid
+{
+  "name": "Pulsegrid — fictional analytics SaaS (demo)",
+
+  "brand": {
+    "product": "Pulsegrid",
+    "url": "",
+    "promise": "Live product analytics that tells you why a number moved.",
+    "hook": "Your metrics are late.",
+    "cta": "Start free",
+    "audience": "Social feed + landing page (16:9), sound on but readable sound-off",
+    "reference": "",
+    "must_show": "connecting data sources, a live dashboard, asking why a metric dropped and getting the answer",
+    "must_avoid": "real company names or logos (integrations are generic), claims presented as real customer data"
+  },
+
+  // Warm paper canvas, ink type, one cobalt accent. The end card floods the frame with the accent.
+  "colors": {
+    "bg": "#F4F2EE",
+    "ink": "#111113",
+    "ink2": "#6B6A66",
+    "accent": "#2F5BFF",
+    "card": "#FFFFFF"
+  },
+
+  // Geist (SIL OFL) variable font for both roles.
+  "fonts": {
+    "display": { "file": "fonts/geist.woff2", "family": "Geist", "weight": 600, "tracking": "-0.045em" },
+    "ui": { "file": "fonts/geist.woff2", "family": "Geist" }
+  },
+
+  "timeline": {
+    "duration": 20,
+    "fps": 60,
+    "bpm": 120,
+    "formats": ["16x9"],
+    "music": { "source": "synth", "chords": ["C", "G", "Am", "F"], "seed": 2026 }
+  },
+
+  "voiceover": { "provider": "none", "voice": "", "style": "" },
+
+  "notes": [
+    "Fictional product: every number on screen is demo data. Never present it as a real customer result.",
+    "One container never cuts: the live dot from the hook becomes the button, the sources card, the dashboard, the ask panel, the metric card and finally the cobalt end card.",
+    "A cursor drives every UI change with a real click.",
+    "Integrations are generic (Product events, Payments, Warehouse) with simple glyphs, never third-party logos."
+  ]
+}
