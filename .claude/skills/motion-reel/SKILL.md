@@ -23,7 +23,7 @@ Fill `brief.md` (template in `templates/`). Required inputs:
 
 If the user names a preset, apply it in step 1. `--preset <name>` looks in the project's `presets/` first, then in this skill's own `presets/` (`blank`, `lukas-yt`, plus any the user added): it fills the brand, colours, fonts, timeline defaults, voiceover and house notes. Then ask only for what it left as `?`.
 
-Ask for every missing input in ONE AskUserQuestion round. Use a default only where the user says "your call".
+Ask for every missing input in ONE round (AskUserQuestion in Claude Code; a single chat message in any other agent). Use a default only where the user says "your call".
 
 ## 1. Scaffold
 ```
@@ -59,7 +59,7 @@ Write `docs/shotlist.md` from the template. Each shot needs beats and time, exac
 Send the user a short summary: shotlist table, palette, fonts, music plan, VO voice, and the VO credit cost if any. **Wait for an explicit OK.** Build nothing until then. Mark the shotlist APPROVED, and reflect every change the user asks for.
 
 ## 6. Voiceover (only if requested)
-Fish Audio MCP: test the tightest line on 2–3 voices, generate one take per line, download it, run `vo.py --scan`, write `vo.json`, run `vo.py`, then `sync.mjs`. Details: AUDIO.md §3.
+Fish Audio MCP (any agent with that MCP server; otherwise skip VO or have the user supply takes in `audio/vo/`): test the tightest line on 2–3 voices, generate one take per line, download it, run `vo.py --scan`, write `vo.json`, run `vo.py`, then `sync.mjs`. Details: AUDIO.md §3.
 
 ## 7. Build with springs
 Replace the starter scenes in `film/film.js`. One `C.scene()` per shot; marks and cues live in `timeline.json`. Use:
@@ -80,8 +80,8 @@ Verify determinism once per project: `node scripts/render.mjs --verify --all` (m
 Each round:
 1. `node scripts/sfx.mjs && python3 scripts/mix.py` (draft sound, so sync can be scored)
 2. `node scripts/render.mjs --sheet --all && node scripts/render.mjs --draft --all`
-3. `python3 scripts/review.py <N> --draft`
-4. **Critic:** spawn a fresh subagent with `reference/CRITIQUE.md`, the project path and N. It LOOKS at every sheet and strip, scores the 8 criteria with evidence, and appends the round to `docs/review_log.md`.
+3. `python3 scripts/review.py <N> --draft` (its whole-frame sync metric reads -2 frames whenever its window opens on motion already in progress; confirm sync per element with `node scripts/sync_roi.mjs` and the regions in `docs/sync_roi.json`)
+4. **Critic:** spawn a fresh subagent with `reference/CRITIQUE.md`, the project path and N (no subagents in your agent? run CRITIQUE.md yourself in the critic's voice and say so in the log). It LOOKS at every sheet and strip, scores the 8 criteria with evidence, and appends the round to `docs/review_log.md`.
 5. Fix the 3 worst problems, verify each fix with stills or clips, and log what changed.
 
 Stop only when the verdict is SHIP: every score ≥ 8 and at least 3 rounds done. Never show the user a film before that.

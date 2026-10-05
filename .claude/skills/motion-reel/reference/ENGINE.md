@@ -94,5 +94,6 @@ node scripts/render.mjs --draft --all                         30 fps drafts for 
 node scripts/render.mjs --all                                 finals (adaptive 180° motion blur)
 node scripts/render.mjs --mux --all                           new mix into existing finals
 node scripts/render.mjs --verify --all                        determinism check (cold vs after seeking elsewhere)
+node scripts/sync_roi.mjs [--fmt 9x16]                        per-element sync at 60 fps (regions in docs/sync_roi.json)
 file:///<project>/film/index.html?play                         preview player in a browser (click to play with audio/mix.wav)
 ```

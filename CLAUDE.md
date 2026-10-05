@@ -1,5 +1,7 @@
 # Motion studio rules
 
+> Any AI agent (not only Claude): start with `AGENTS.md`. These rules apply to every agent.
+
 ## Render contract
 - Every film is a pure function of time: window.seek(t) paints frame t.
 - No CSS transitions, no setTimeout, no requestAnimationFrame in render mode, no state carried between frames. Seeded noise only (mulberry32), never Math.random.

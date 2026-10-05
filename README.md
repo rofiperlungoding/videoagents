@@ -6,6 +6,14 @@ Get weekly updates on the latest AI workflows to 10x your productivity: https://
 > a 20-second 16:9 launch ad for **Pulsegrid**, a fictional analytics SaaS (final: `videos/pulsegrid-launch-16x9/renders/16x9.mp4`).
 > Its brand preset is `presets/pulsegrid`. Every number on screen is demo data.
 
+> **Works with any AI coding agent**: Claude Code (`/motion-reel` skill), Codex, Cursor, Gemini CLI, Copilot, Aider…
+> Point your agent at [`AGENTS.md`](AGENTS.md). Quick start for any agent or human:
+> ```bash
+> npm install && npx playwright install chromium && pip install -r requirements.txt
+> npm run doctor                                            # toolchain check
+> npm run new -- videos/my-ad --preset presets/blank        # scaffold a film, then follow AGENTS.md
+> ```
+
 # Motion Reel Kit
 
 Beat-synced motion graphics made entirely in code, directed by Claude Code.

@@ -2,12 +2,17 @@
   "name": "motion-reel-kit",
   "version": "1.0.0",
   "private": true,
-  "description": "Beat-synced motion reels made in code with Claude Code: the /motion-reel skill, house rules, brand presets and the chapter prompts.",
+  "description": "Beat-synced motion reels and SaaS ads made in code by an AI coding agent (Claude Code, Codex, Cursor, Gemini CLI…): the motion-reel pipeline, house rules, brand presets and prompts.",
   "scripts": {
     "setup": "npx playwright install chromium",
+    "doctor": "sh doctor.sh",
+    "new": "sh .claude/skills/motion-reel/scripts/init.sh",
     "test": "sh test-render.sh"
   },
   "devDependencies": {
     "playwright": "^1.63.0"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }
