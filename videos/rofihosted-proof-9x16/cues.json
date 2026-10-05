@@ -1,6 +1,6 @@
 {
  "sr": 48000,
- "duration": 57,
+ "duration": 60,
  "measured": true,
  "cues": [
   {
@@ -11,12 +11,12 @@
    "pan": -0.096,
    "beat": 0,
    "mark": "hook",
-   "snapped_to_hit": true,
+   "snapped_to_hit": false,
    "snap_ms": 0,
    "what": "first key"
   },
   {
-   "t": 0.25423,
+   "t": 0.26782,
    "type": "tick",
    "gain": 0.28,
    "pitch": 1.019,
@@ -28,19 +28,19 @@
    "what": "typing line 1"
   },
   {
-   "t": 0.38136,
+   "t": 0.40174,
    "type": "tick",
    "gain": 0.28,
    "pitch": 0.958,
    "pan": -0.139,
    "beat": 0.75,
    "mark": null,
-   "snapped_to_hit": true,
-   "snap_ms": 0.01,
+   "snapped_to_hit": false,
+   "snap_ms": 0,
    "what": "typing line 1"
   },
   {
-   "t": 0.50847,
+   "t": 0.53565,
    "type": "tick",
    "gain": 0.28,
    "pitch": 1.022,
@@ -52,7 +52,7 @@
    "what": "typing line 1"
   },
   {
-   "t": 0.63559,
+   "t": 0.66958,
    "type": "tick",
    "gain": 0.28,
    "pitch": 0.975,
@@ -64,7 +64,7 @@
    "what": "typing line 1"
   },
   {
-   "t": 0.76271,
+   "t": 0.80351,
    "type": "tick",
    "gain": 0.28,
    "pitch": 0.948,
@@ -76,7 +76,7 @@
    "what": "typing line 1"
   },
   {
-   "t": 0.88983,
+   "t": 0.93743,
    "type": "tick",
    "gain": 0.28,
    "pitch": 0.987,
@@ -88,19 +88,19 @@
    "what": "typing line 1"
   },
   {
-   "t": 1.01695,
+   "t": 1.07136,
    "type": "tick",
    "gain": 0.28,
    "pitch": 0.962,
    "pan": -0.084,
    "beat": 2,
    "mark": null,
-   "snapped_to_hit": true,
+   "snapped_to_hit": false,
    "snap_ms": 0,
    "what": "typing line 1"
   },
   {
-   "t": 1.14407,
+   "t": 1.20529,
    "type": "tick",
    "gain": 0.28,
    "pitch": 0.989,
@@ -112,7 +112,7 @@
    "what": "typing line 1"
   },
   {
-   "t": 1.27119,
+   "t": 1.33922,
    "type": "tick",
    "gain": 0.28,
    "pitch": 1.008,
@@ -124,19 +124,19 @@
    "what": "typing line 1"
   },
   {
-   "t": 1.39831,
+   "t": 1.47315,
    "type": "tick",
    "gain": 0.28,
    "pitch": 0.964,
    "pan": -0.112,
    "beat": 2.75,
    "mark": null,
-   "snapped_to_hit": true,
-   "snap_ms": 0.01,
+   "snapped_to_hit": false,
+   "snap_ms": 0,
    "what": "typing line 1"
   },
   {
-   "t": 1.65254,
+   "t": 1.74101,
    "type": "tick",
    "gain": 0.28,
    "pitch": 1.033,
@@ -148,7 +148,7 @@
    "what": "typing line 2"
   },
   {
-   "t": 1.77966,
+   "t": 1.87494,
    "type": "tick",
    "gain": 0.28,
    "pitch": 1.053,
@@ -160,7 +160,7 @@
    "what": "typing line 2"
   },
   {
-   "t": 1.90678,
+   "t": 2.00887,
    "type": "tick",
    "gain": 0.28,
    "pitch": 0.973,
@@ -172,19 +172,19 @@
    "what": "typing line 2"
   },
   {
-   "t": 2.0339,
+   "t": 2.1428,
    "type": "tick",
    "gain": 0.28,
    "pitch": 0.99,
    "pan": -0.107,
    "beat": 4,
    "mark": null,
-   "snapped_to_hit": true,
+   "snapped_to_hit": false,
    "snap_ms": 0,
    "what": "typing line 2"
   },
   {
-   "t": 2.16102,
+   "t": 2.27673,
    "type": "tick",
    "gain": 0.28,
    "pitch": 1.02,
@@ -196,7 +196,7 @@
    "what": "typing line 2"
   },
   {
-   "t": 2.28814,
+   "t": 2.41066,
    "type": "tick",
    "gain": 0.28,
    "pitch": 0.976,
@@ -208,19 +208,19 @@
    "what": "typing line 2"
   },
   {
-   "t": 2.41525,
+   "t": 2.54458,
    "type": "tick",
    "gain": 0.28,
    "pitch": 0.95,
    "pan": -0.23,
    "beat": 4.75,
    "mark": null,
-   "snapped_to_hit": true,
+   "snapped_to_hit": false,
    "snap_ms": 0,
    "what": "typing line 2"
   },
   {
-   "t": 2.54237,
+   "t": 2.67851,
    "type": "tick",
    "gain": 0.28,
    "pitch": 0.98,
@@ -232,7 +232,7 @@
    "what": "typing line 2"
   },
   {
-   "t": 2.66949,
+   "t": 2.81244,
    "type": "tick",
    "gain": 0.28,
    "pitch": 1.029,
@@ -244,7 +244,7 @@
    "what": "typing line 2"
   },
   {
-   "t": 2.92373,
+   "t": 3.0803,
    "type": "shutter",
    "gain": 0.45,
    "pitch": 1.056,
@@ -256,55 +256,55 @@
    "what": "selection sweeps over someone else s server"
   },
   {
-   "t": 4.0678,
+   "t": 4.28566,
    "type": "pop",
    "gain": 0.5,
    "pitch": 1.016,
    "pan": -0.067,
    "beat": 8,
    "mark": "frag1",
-   "snapped_to_hit": true,
+   "snapped_to_hit": false,
    "snap_ms": 0,
    "what": "fragment $20 / month"
   },
   {
-   "t": 5.08475,
+   "t": 5.3571,
    "type": "pop",
    "gain": 0.5,
    "pitch": 0.944,
    "pan": 0.246,
    "beat": 10,
    "mark": "frag2",
-   "snapped_to_hit": true,
+   "snapped_to_hit": false,
    "snap_ms": 0,
    "what": "fragment rate limit"
   },
   {
-   "t": 6.10169,
+   "t": 6.42853,
    "type": "pop",
    "gain": 0.5,
    "pitch": 0.962,
    "pan": 0.233,
    "beat": 12,
    "mark": "frag3",
-   "snapped_to_hit": true,
+   "snapped_to_hit": false,
    "snap_ms": 0,
    "what": "fragment training data"
   },
   {
-   "t": 7.11864,
+   "t": 7.49996,
    "type": "whoosh",
    "gain": 0.7,
    "pitch": 1.04,
    "pan": -0.113,
    "beat": 14,
    "mark": "stop",
-   "snapped_to_hit": true,
+   "snapped_to_hit": false,
    "snap_ms": 0,
    "what": "camera dives through server. into Stop renting."
   },
   {
-   "t": 9.15254,
+   "t": 9.6429,
    "type": "pop",
    "gain": 0.75,
    "pitch": 0.999,
@@ -316,7 +316,7 @@
    "what": "mark pops between Meet and rofihosted"
   },
   {
-   "t": 11.18644,
+   "t": 11.78575,
    "type": "whoosh",
    "gain": 0.4,
    "pitch": 1.057,
@@ -328,7 +328,7 @@
    "what": "Meet line lifts away"
   },
   {
-   "t": 15.25424,
+   "t": 16.0715,
    "type": "whoosh",
    "gain": 0.5,
    "pitch": 1.044,
@@ -336,23 +336,23 @@
    "beat": 30,
    "mark": "tablet_frame",
    "snapped_to_hit": true,
-   "snap_ms": 0,
+   "snap_ms": 0.07,
    "what": "frame grows into the tablet"
   },
   {
-   "t": 16.77966,
+   "t": 17.67863,
    "type": "click",
    "gain": 0.45,
    "pitch": 1.012,
    "pan": -0.019,
    "beat": 33,
    "mark": "hud1",
-   "snapped_to_hit": false,
+   "snapped_to_hit": true,
    "snap_ms": 0,
    "what": "HUD 1"
   },
   {
-   "t": 17.54237,
+   "t": 18.48223,
    "type": "click",
    "gain": 0.45,
    "pitch": 1,
@@ -364,7 +364,7 @@
    "what": "HUD 2"
   },
   {
-   "t": 18.30508,
+   "t": 19.28575,
    "type": "click",
    "gain": 0.45,
    "pitch": 1.032,
@@ -376,19 +376,19 @@
    "what": "HUD 3"
   },
   {
-   "t": 19.0678,
+   "t": 20.08633,
    "type": "click",
    "gain": 0.45,
    "pitch": 1.021,
    "pan": 0.234,
    "beat": 37.5,
    "mark": "hud4",
-   "snapped_to_hit": false,
-   "snap_ms": 0,
+   "snapped_to_hit": true,
+   "snap_ms": -3.04,
    "what": "HUD 4"
   },
   {
-   "t": 19.32203,
+   "t": 20.35727,
    "type": "shutter",
    "gain": 0.5,
    "pitch": 0.985,
@@ -400,7 +400,7 @@
    "what": "brackets snap around One tablet. A real server."
   },
   {
-   "t": 21.35593,
+   "t": 22.50008,
    "type": "pop",
    "gain": 0.45,
    "pitch": 0.961,
@@ -412,19 +412,19 @@
    "what": "phone node"
   },
   {
-   "t": 21.86441,
+   "t": 23.03579,
    "type": "pop",
    "gain": 0.45,
    "pitch": 1.054,
    "pan": 0.213,
    "beat": 43,
    "mark": "node_laptop",
-   "snapped_to_hit": false,
+   "snapped_to_hit": true,
    "snap_ms": 0,
    "what": "laptop node"
   },
   {
-   "t": 22.37288,
+   "t": 23.57148,
    "type": "whoosh",
    "gain": 0.45,
    "pitch": 0.961,
@@ -436,43 +436,43 @@
    "what": "tunnel line draws"
   },
   {
-   "t": 24.40678,
+   "t": 25.71433,
    "type": "whoosh",
    "gain": 0.6,
    "pitch": 0.998,
    "pan": 0.044,
    "beat": 48,
    "mark": "phone",
-   "snapped_to_hit": true,
+   "snapped_to_hit": false,
    "snap_ms": 0,
    "what": "dive into the phone"
   },
   {
-   "t": 24.78814,
+   "t": 26.11612,
    "type": "tick",
    "gain": 0.3,
    "pitch": 0.975,
    "pan": 0.224,
    "beat": 48.75,
    "mark": null,
-   "snapped_to_hit": true,
-   "snap_ms": 0.01,
+   "snapped_to_hit": false,
+   "snap_ms": 0,
    "what": "typing the request"
   },
   {
-   "t": 24.91525,
+   "t": 26.25008,
    "type": "tick",
    "gain": 0.3,
    "pitch": 1.048,
    "pan": -0.242,
    "beat": 49,
    "mark": null,
-   "snapped_to_hit": false,
-   "snap_ms": 0,
+   "snapped_to_hit": true,
+   "snap_ms": 0.03,
    "what": "typing the request"
   },
   {
-   "t": 25.04237,
+   "t": 26.38399,
    "type": "tick",
    "gain": 0.3,
    "pitch": 1.056,
@@ -484,19 +484,19 @@
    "what": "typing the request"
   },
   {
-   "t": 25.16949,
+   "t": 26.51708,
    "type": "tick",
    "gain": 0.3,
    "pitch": 1.046,
    "pan": -0.133,
    "beat": 49.5,
    "mark": null,
-   "snapped_to_hit": false,
-   "snap_ms": 0,
+   "snapped_to_hit": true,
+   "snap_ms": -0.85,
    "what": "typing the request"
   },
   {
-   "t": 25.29661,
+   "t": 26.65187,
    "type": "tick",
    "gain": 0.3,
    "pitch": 1.012,
@@ -508,7 +508,7 @@
    "what": "typing the request"
   },
   {
-   "t": 25.42373,
+   "t": 26.78581,
    "type": "tick",
    "gain": 0.3,
    "pitch": 0.942,
@@ -520,7 +520,7 @@
    "what": "typing the request"
   },
   {
-   "t": 25.55085,
+   "t": 26.91973,
    "type": "tick",
    "gain": 0.3,
    "pitch": 1.044,
@@ -532,7 +532,7 @@
    "what": "typing the request"
   },
   {
-   "t": 25.67797,
+   "t": 27.05365,
    "type": "tick",
    "gain": 0.3,
    "pitch": 1.035,
@@ -544,31 +544,31 @@
    "what": "typing the request"
   },
   {
-   "t": 25.80508,
+   "t": 27.18758,
    "type": "tick",
    "gain": 0.3,
    "pitch": 1.054,
    "pan": 0.218,
    "beat": 50.75,
    "mark": null,
-   "snapped_to_hit": true,
+   "snapped_to_hit": false,
    "snap_ms": 0,
    "what": "typing the request"
   },
   {
-   "t": 25.9322,
+   "t": 27.3215,
    "type": "tick",
    "gain": 0.3,
    "pitch": 0.997,
    "pan": -0.019,
    "beat": 51,
    "mark": null,
-   "snapped_to_hit": false,
+   "snapped_to_hit": true,
    "snap_ms": 0,
    "what": "typing the request"
   },
   {
-   "t": 26.05932,
+   "t": 27.45543,
    "type": "tick",
    "gain": 0.3,
    "pitch": 0.94,
@@ -580,19 +580,19 @@
    "what": "typing the request"
   },
   {
-   "t": 26.18644,
+   "t": 27.5864,
    "type": "tick",
    "gain": 0.3,
    "pitch": 1.039,
    "pan": 0.208,
    "beat": 51.5,
    "mark": null,
-   "snapped_to_hit": false,
-   "snap_ms": 0,
+   "snapped_to_hit": true,
+   "snap_ms": -2.96,
    "what": "typing the request"
   },
   {
-   "t": 26.31356,
+   "t": 27.7233,
    "type": "tick",
    "gain": 0.3,
    "pitch": 1.007,
@@ -604,7 +604,7 @@
    "what": "typing the request"
   },
   {
-   "t": 26.69492,
+   "t": 28.12504,
    "type": "click",
    "gain": 0.75,
    "pitch": 0.952,
@@ -616,19 +616,19 @@
    "what": "send tapped"
   },
   {
-   "t": 26.94915,
+   "t": 28.39285,
    "type": "whoosh",
    "gain": 0.45,
    "pitch": 1.059,
    "pan": 0.171,
    "beat": 53,
    "mark": "split",
-   "snapped_to_hit": false,
+   "snapped_to_hit": true,
    "snap_ms": 0,
    "what": "split opens"
   },
   {
-   "t": 27.45763,
+   "t": 28.9286,
    "type": "tick",
    "gain": 0.5,
    "pitch": 0.967,
@@ -640,19 +640,19 @@
    "what": "step WEB"
   },
   {
-   "t": 27.9661,
+   "t": 29.46429,
    "type": "tick",
    "gain": 0.5,
    "pitch": 1.025,
    "pan": 0.178,
    "beat": 55,
    "mark": "step2",
-   "snapped_to_hit": false,
+   "snapped_to_hit": true,
    "snap_ms": 0,
    "what": "step PAGE 1"
   },
   {
-   "t": 28.47458,
+   "t": 30.00002,
    "type": "tick",
    "gain": 0.5,
    "pitch": 0.963,
@@ -664,19 +664,19 @@
    "what": "step PAGE 2"
   },
   {
-   "t": 28.98305,
+   "t": 30.53575,
    "type": "tick",
    "gain": 0.5,
    "pitch": 1.052,
    "pan": -0.226,
    "beat": 57,
    "mark": "step4",
-   "snapped_to_hit": false,
+   "snapped_to_hit": true,
    "snap_ms": 0,
    "what": "step MEMORY"
   },
   {
-   "t": 30.50847,
+   "t": 32.1429,
    "type": "pop",
    "gain": 0.7,
    "pitch": 1.006,
@@ -688,19 +688,19 @@
    "what": "file card lands"
   },
   {
-   "t": 31.01695,
+   "t": 32.6786,
    "type": "click",
    "gain": 0.5,
    "pitch": 1.015,
    "pan": 0.053,
    "beat": 61,
    "mark": "v1",
-   "snapped_to_hit": false,
+   "snapped_to_hit": true,
    "snap_ms": 0,
    "what": "1/3 verified"
   },
   {
-   "t": 31.52542,
+   "t": 33.21437,
    "type": "click",
    "gain": 0.5,
    "pitch": 0.964,
@@ -712,19 +712,19 @@
    "what": "2/3 verified"
   },
   {
-   "t": 32.0339,
+   "t": 33.74998,
    "type": "pop",
    "gain": 0.65,
    "pitch": 0.978,
    "pan": -0.169,
    "beat": 63,
    "mark": "v3",
-   "snapped_to_hit": false,
+   "snapped_to_hit": true,
    "snap_ms": 0,
    "what": "3/3 verified"
   },
   {
-   "t": 32.54237,
+   "t": 34.28579,
    "type": "shutter",
    "gain": 0.5,
    "pitch": 1.048,
@@ -736,7 +736,7 @@
    "what": "[ verified ]"
   },
   {
-   "t": 35.59322,
+   "t": 37.50008,
    "type": "whoosh",
    "gain": 0.6,
    "pitch": 0.947,
@@ -748,7 +748,7 @@
    "what": "lime flood from the dot"
   },
   {
-   "t": 36.61017,
+   "t": 38.57154,
    "type": "tick",
    "gain": 0.3,
    "pitch": 0.984,
@@ -760,7 +760,7 @@
    "what": "typing the command"
   },
   {
-   "t": 36.73729,
+   "t": 38.70545,
    "type": "tick",
    "gain": 0.3,
    "pitch": 1.04,
@@ -772,7 +772,7 @@
    "what": "typing the command"
   },
   {
-   "t": 36.8644,
+   "t": 38.83935,
    "type": "tick",
    "gain": 0.3,
    "pitch": 1.03,
@@ -784,31 +784,31 @@
    "what": "typing the command"
   },
   {
-   "t": 36.99153,
+   "t": 38.97326,
    "type": "tick",
    "gain": 0.3,
    "pitch": 0.97,
    "pan": -0.012,
    "beat": 72.75,
    "mark": null,
-   "snapped_to_hit": true,
-   "snap_ms": 0.01,
+   "snapped_to_hit": false,
+   "snap_ms": 0,
    "what": "typing the command"
   },
   {
-   "t": 37.11864,
+   "t": 39.10717,
    "type": "tick",
    "gain": 0.3,
    "pitch": 0.967,
    "pan": -0.222,
    "beat": 73,
    "mark": null,
-   "snapped_to_hit": false,
+   "snapped_to_hit": true,
    "snap_ms": 0,
    "what": "typing the command"
   },
   {
-   "t": 37.24576,
+   "t": 39.24109,
    "type": "tick",
    "gain": 0.3,
    "pitch": 0.952,
@@ -820,7 +820,7 @@
    "what": "typing the command"
   },
   {
-   "t": 38.38983,
+   "t": 40.44649,
    "type": "pop",
    "gain": 0.65,
    "pitch": 0.957,
@@ -832,7 +832,7 @@
    "what": "compiled check"
   },
   {
-   "t": 39.15254,
+   "t": 41.25012,
    "type": "shutter",
    "gain": 0.45,
    "pitch": 1.058,
@@ -844,7 +844,7 @@
    "what": "phone screen sleeps"
   },
   {
-   "t": 41.18644,
+   "t": 43.39299,
    "type": "pop",
    "gain": 0.6,
    "pitch": 0.96,
@@ -856,7 +856,7 @@
    "what": "notification lands (bell in the score)"
   },
   {
-   "t": 44.74576,
+   "t": 47.143,
    "type": "tick",
    "gain": 0.45,
    "pitch": 0.978,
@@ -868,7 +868,7 @@
    "what": "memory 1"
   },
   {
-   "t": 45.25424,
+   "t": 47.67872,
    "type": "tick",
    "gain": 0.45,
    "pitch": 0.951,
@@ -880,31 +880,31 @@
    "what": "memory 2"
   },
   {
-   "t": 45.76271,
+   "t": 48.21437,
    "type": "tick",
    "gain": 0.45,
    "pitch": 0.945,
    "pan": 0.045,
    "beat": 90,
    "mark": "mem3",
-   "snapped_to_hit": false,
+   "snapped_to_hit": true,
    "snap_ms": 0,
    "what": "memory 3"
   },
   {
-   "t": 48.30508,
+   "t": 50.89287,
    "type": "whoosh",
    "gain": 0.6,
    "pitch": 1.009,
    "pan": 0.246,
    "beat": 95,
    "mark": "we",
-   "snapped_to_hit": false,
-   "snap_ms": 0,
+   "snapped_to_hit": true,
+   "snap_ms": -0.15,
    "what": "We put it on your desk zooms in"
   },
   {
-   "t": 50.84746,
+   "t": 53.57154,
    "type": "shutter",
    "gain": 0.55,
    "pitch": 0.984,
@@ -912,23 +912,23 @@
    "beat": 100,
    "mark": "no1",
    "snapped_to_hit": true,
-   "snap_ms": 0,
+   "snap_ms": -0.07,
    "what": "No subscriptions."
   },
   {
-   "t": 51.35593,
+   "t": 54.10715,
    "type": "shutter",
    "gain": 0.55,
    "pitch": 1.01,
    "pan": 0.084,
    "beat": 101,
    "mark": "no2",
-   "snapped_to_hit": false,
+   "snapped_to_hit": true,
    "snap_ms": 0,
    "what": "No telemetry."
   },
   {
-   "t": 51.86441,
+   "t": 54.64292,
    "type": "shutter",
    "gain": 0.55,
    "pitch": 1.045,
@@ -940,19 +940,19 @@
    "what": "Your silicon."
   },
   {
-   "t": 53.89831,
+   "t": 56.78591,
    "type": "pop",
    "gain": 0.7,
    "pitch": 0.989,
    "pan": 0.078,
    "beat": 106,
    "mark": "logo_mark",
-   "snapped_to_hit": true,
+   "snapped_to_hit": false,
    "snap_ms": 0,
    "what": "mark pops"
   },
   {
-   "t": 54.91525,
+   "t": 57.85734,
    "type": "tick",
    "gain": 0.28,
    "pitch": 1.03,
@@ -964,7 +964,7 @@
    "what": "typing the tagline"
   },
   {
-   "t": 55.04237,
+   "t": 57.99127,
    "type": "tick",
    "gain": 0.28,
    "pitch": 0.98,
@@ -976,7 +976,7 @@
    "what": "typing the tagline"
   },
   {
-   "t": 55.16949,
+   "t": 58.1252,
    "type": "tick",
    "gain": 0.28,
    "pitch": 0.991,
@@ -988,7 +988,7 @@
    "what": "typing the tagline"
   },
   {
-   "t": 55.29661,
+   "t": 58.25913,
    "type": "tick",
    "gain": 0.28,
    "pitch": 0.96,
@@ -1000,7 +1000,7 @@
    "what": "typing the tagline"
   },
   {
-   "t": 55.42373,
+   "t": 58.39306,
    "type": "tick",
    "gain": 0.28,
    "pitch": 0.948,
@@ -1012,7 +1012,7 @@
    "what": "typing the tagline"
   },
   {
-   "t": 55.55085,
+   "t": 58.52699,
    "type": "tick",
    "gain": 0.28,
    "pitch": 0.995,
@@ -1024,7 +1024,7 @@
    "what": "typing the tagline"
   },
   {
-   "t": 55.67797,
+   "t": 58.66092,
    "type": "tick",
    "gain": 0.28,
    "pitch": 0.966,
@@ -1036,7 +1036,7 @@
    "what": "typing the tagline"
   },
   {
-   "t": 55.80508,
+   "t": 58.79484,
    "type": "tick",
    "gain": 0.28,
    "pitch": 1.021,
@@ -1048,7 +1048,7 @@
    "what": "typing the tagline"
   },
   {
-   "t": 56.18644,
+   "t": 59.19663,
    "type": "tick",
    "gain": 0.28,
    "pitch": 0.978,
@@ -1060,7 +1060,7 @@
    "what": "typing the URL"
   },
   {
-   "t": 56.31356,
+   "t": 59.33056,
    "type": "tick",
    "gain": 0.28,
    "pitch": 0.966,
@@ -1072,7 +1072,7 @@
    "what": "typing the URL"
   },
   {
-   "t": 56.44068,
+   "t": 59.46449,
    "type": "tick",
    "gain": 0.28,
    "pitch": 1.052,
@@ -1084,7 +1084,7 @@
    "what": "typing the URL"
   },
   {
-   "t": 56.5678,
+   "t": 59.59842,
    "type": "tick",
    "gain": 0.28,
    "pitch": 1.025,
