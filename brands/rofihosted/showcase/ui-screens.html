@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>rofihosted · UI screens</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/logo/mark.svg">
+  <link rel="stylesheet" href="../assets/cc.css">
+  <link rel="stylesheet" href="../assets/app.css">
+  <link rel="stylesheet" href="showcase.css">
+</head>
+<body class="cc-root">
+<div class="page">
+  <header>
+    <div>
+      <div class="brand"><img class="brand-mark" src="../assets/logo/mark.svg" alt="">rofihosted</div>
+      <h1 style="margin-top:22px">UI screens</h1>
+      <p class="sub">Every screen of the product, built from the app's own stylesheets (<code>cc.css</code> and <code>app.css</code>, snapshot of <code>apps/web/public</code>) and its own class names. Frames are exact pixel size: screenshot or screen-record them 1:1 for the video. Append <code>?z=1</code> to see them at 100%.</p>
+    </div>
+    <a class="cc-btn cc-btn-secondary" href="brand-board.html" style="height:40px;padding:0 16px;text-decoration:none">Brand board →</a>
+  </header>
+
+  <section class="block" id="home">
+    <span class="cc-eyebrow">01 · Home</span>
+    <h2>New chat</h2>
+    <p>The first screen a person sees. Serif greeting that changes with the hour, the composer in the middle, three suggestions, then "Jump back in". Placeholder is <code>What can I do for you?</code>. Role-specific line is not shown here; suggestions below are the member set.</p>
+    <div class="stage"><div class="frame desktop" id="f-home"></div></div>
+    <div class="cap">1440 × 900 · <code>.view.home</code></div>
+  </section>
+
+  <section class="block" id="chat">
+    <span class="cc-eyebrow">02 · Conversation</span>
+    <h2>A turn in progress, then finished</h2>
+    <p>User bubble (sans, raised chip). The activity line: spark <code>✻</code> + one sentence + elapsed time, opening into mono step tags (<code>WEB</code>, <code>PAGE</code>, <code>MEMORY</code>). The assistant answers in Fraunces. The document card carries Word / PDF and the automatic link-check badge.</p>
+    <div class="stage"><div class="frame desktop" id="f-chat"></div></div>
+    <div class="cap">1440 × 900 · <code>.msg-user</code> <code>.activity</code> <code>.msg-assistant</code> <code>.file-card</code></div>
+  </section>
+
+  <section class="block" id="live">
+    <span class="cc-eyebrow">03 · Live activity</span>
+    <h2>The assistant is working</h2>
+    <p>The shimmer sweep on the verb and the pulsing step tag are the product's heartbeat. The spark cycles <code>· ✢ ✳ ✶ ✻ ✽ ✻ ✶ ✳ ✢</code>. The verb rotates (<em>Pondering, Brewing, Simmering…</em>) and, one time in three, says "for {name}".</p>
+    <div class="stage"><div class="frame wide" id="f-live"></div></div>
+    <div class="cap">1440 × 810 · animated, 16:9 for video</div>
+  </section>
+
+  <section class="block" id="settings">
+    <span class="cc-eyebrow">04 · Settings</span>
+    <h2>Settings dialog (Memory)</h2>
+    <p>One dialog, sections on the left, flat rows on the right. This is where the "it remembers you" promise becomes visible: a plain list of what the assistant knows.</p>
+    <div class="stage"><div class="frame desktop" id="f-settings"></div></div>
+    <div class="cap">1440 × 900 · <code>.settings</code></div>
+  </section>
+
+  <section class="block" id="auth">
+    <span class="cc-eyebrow">05 · Sign in and invitation</span>
+    <h2>Access by invitation</h2>
+    <div class="row">
+      <div><div class="stage"><div class="frame desktop" style="width:700px;height:760px" id="f-login"></div></div><div class="cap">700 × 760 · login</div></div>
+      <div><div class="stage"><div class="frame desktop" style="width:700px;height:760px" id="f-invite"></div></div><div class="cap">700 × 760 · invitation ("You're in.")</div></div>
+    </div>
+  </section>
+
+  <section class="block" id="landing">
+    <span class="cc-eyebrow">06 · Public page and status</span>
+    <h2>rofihosted.space and status.rofihosted.space</h2>
+    <div class="stage"><div class="frame desktop" style="height:760px;overflow:hidden" id="f-landing"></div></div>
+    <div class="cap">1440 × 760 · landing hero (<code>ubuntu/conf/index.html</code>)</div>
+    <div class="stage" style="margin-top:36px"><div class="frame desktop" style="height:760px;overflow:hidden" id="f-status"></div></div>
+    <div class="cap">1440 × 760 · status page, reduced (<code>monitor/page.html</code>)</div>
+  </section>
+
+  <section class="block" id="mobile">
+    <span class="cc-eyebrow">07 · Mobile</span>
+    <h2>Phone (≤ 860 px)</h2>
+    <p>The sidebar becomes a drawer, the floating topbar keeps one button, the composer stays pinned. Same tokens, same serif.</p>
+    <div class="row">
+      <div><div class="stage"><div class="frame mobile" id="f-m-home"></div></div><div class="cap">390 × 844 · home</div></div>
+      <div><div class="stage"><div class="frame mobile" id="f-m-chat"></div></div><div class="cap">390 × 844 · conversation</div></div>
+      <div><div class="stage"><div class="frame mobile" id="f-m-side"></div></div><div class="cap">390 × 844 · drawer open</div></div>
+    </div>
+  </section>
+</div>
+
+<script>
+// ── Real icons, copied from apps/web/public/index.html and app.js ──
+const I = (d, w = 18, sw = 1.8) => `<svg viewBox="0 0 24 24" width="${w}" height="${w}" fill="none" stroke="currentColor" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
+const ICON = {
+  sidebar: I('<rect x="3" y="4" width="18" height="16" rx="3"/><path d="M9 4v16"/>'),
+  search: I('<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>'),
+  plus: I('<path d="M12 5v14M5 12h14"/>'),
+  clip: I('<path d="M21 11.5l-8.6 8.6a5.5 5.5 0 0 1-7.8-7.8l8.6-8.6a3.7 3.7 0 0 1 5.2 5.2l-8.5 8.5a1.8 1.8 0 0 1-2.6-2.6l7.9-7.9"/>', 20),
+  send: I('<path d="M12 19V5M6 11l6-6 6 6"/>', 16, 2.4),
+  updown: I('<path d="m8 10 4-4 4 4M8 14l4 4 4-4"/>'),
+  gear: I('<circle cx="12" cy="12" r="3"/><path d="M12 3v2.5M12 18.5V21M3 12h2.5M18.5 12H21M5.6 5.6l1.8 1.8M16.6 16.6l1.8 1.8M5.6 18.4l1.8-1.8M16.6 7.4l1.8-1.8"/>'),
+  bulb: I('<path d="M12 3a6 6 0 0 0-6 6c0 2.2 1.2 3.6 2 4.5.6.7 1 1.4 1 2.5h6c0-1.1.4-1.8 1-2.5.8-.9 2-2.3 2-4.5a6 6 0 0 0-6-6z"/><path d="M9.5 20h5"/>'),
+  shield: I('<path d="M12 3 5 6v5c0 4.5 3 8.2 7 10 4-1.8 7-5.5 7-10V6z"/>'),
+  pulse: I('<path d="M3 12h4l2.5-6 5 12 2.5-6h4"/>'),
+  out: I('<path d="M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3"/><path d="M10 8l-4 4 4 4"/><path d="M6 12h10"/>'),
+  chat: I('<path d="M4 5h16v11H9l-5 4z"/>', 17),
+  close: I('<path d="M6 6l12 12M18 6 6 18"/>'),
+};
+const GOOGLE = '<svg viewBox="0 0 48 48" width="18" height="18" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>';
+const MARK = '<img class="brand-mark" src="../assets/logo/mark.svg" alt="">';
+
+// ── Sidebar, as in index.html. `active` highlights a row. ──
+const sessions = [
+  ['label', 'Pinned'],
+  ['row', 'Thesis outline: edge computing', 0],
+  ['label', 'Today'],
+  ['row', 'CPU scheduling report, Module 5', 1],
+  ['row', 'Check my unread email', 0, 'unread'],
+  ['row', 'Short answers, please', 0],
+  ['label', 'Yesterday'],
+  ['row', 'Find today’s tech news', 0],
+  ['row', 'Compare FCFS and Round Robin', 0],
+  ['label', 'Oct 2'],
+  ['row', 'Draft a caption for the expo', 0],
+  ['row', 'Calendar this week', 0],
+];
+function sidebar(activeIdx = -1, extra = '') {
+  let i = 0;
+  const list = sessions.map(([k, t, , f]) => {
+    if (k === 'label') return `<div class="side-label">${t}</div>`;
+    const cls = `session${i === activeIdx ? ' session-active' : ''}${f === 'unread' ? ' session-unread' : ''}`;
+    i++;
+    return `<div class="${cls}"><button class="session-open" type="button">${t}</button></div>`;
+  }).join('');
+  return `<aside class="side">
+    <div class="side-head"><div class="brand">${MARK}rofihosted</div><button class="icon-btn" type="button">${ICON.sidebar}</button></div>
+    <label class="side-search">${ICON.search}<input placeholder="Search" aria-label="Search"><kbd>Ctrl K</kbd></label>
+    <nav class="nav"><button class="cc-nav-item nav-link" id="new-chat" type="button">${ICON.plus}New chat</button></nav>
+    <nav class="sessions">${list}</nav>
+    <button class="side-foot" type="button"><span class="avatar">R</span><span class="who"><span class="who-name">Rofi</span><span class="who-meta">Owner</span></span>${ICON.updown}</button>
+    ${extra}
+  </aside>`;
+}
+const composer = (placeholder) => `<form class="composer"><div class="cc-card cc-e2 composer-box"><div class="composer-row">
+  <button class="cc-btn cc-btn-ghost attach-btn" type="button">${ICON.clip}</button>
+  <textarea rows="1" placeholder="${placeholder}"></textarea>
+  <button class="send-btn" type="button">${ICON.send}</button></div></div><div class="attach-note"></div></form>`;
+
+// 01 Home
+$home = `<div class="shell">${sidebar(-1)}
+  <main class="main"><header class="topbar"><button class="icon-btn menu-btn" type="button">${ICON.sidebar}</button></header>
+  <section class="view home" id="view-chat">
+    <div class="thread"><div class="thread-inner"><div class="empty"><img class="home-mark" src="../assets/logo/mark.svg" alt=""><h2 class="home-greeting">Evening, Rofi</h2></div></div></div>
+    ${composer('What can I do for you?')}
+    <div class="home-below">
+      <div class="suggest"><button class="home-chip" type="button">Check my unread email</button><button class="home-chip" type="button">What's on my calendar today?</button><button class="home-chip" type="button">How is the tablet doing right now?</button></div>
+      <div class="home-label">Jump back in</div>
+      <button class="home-recent" type="button"><span class="home-tile is-unread">${I('<path d="M4 5h16v11H9l-5 4z"/>', 17)}</span><span class="home-recent-text"><span class="home-recent-title">Check my unread email</span><span class="home-recent-meta"><span class="home-flag">Unread</span> · 6 messages · 12 min ago</span></span></button>
+      <button class="home-recent" type="button"><span class="home-tile">${ICON.chat}</span><span class="home-recent-text"><span class="home-recent-title">CPU scheduling report, Module 5</span><span class="home-recent-meta">14 messages · 2 h ago</span></span></button>
+      <button class="home-recent" type="button"><span class="home-tile">${ICON.chat}</span><span class="home-recent-text"><span class="home-recent-title">Thesis outline: edge computing</span><span class="home-recent-meta">Pinned · 31 messages · Yesterday</span></span></button>
+    </div>
+  </section></main></div>`;
+
+// 02 Chat
+const STEPS = (open) => `<div class="activity done ${open ? '' : 'collapsed'}"><button class="act-head" type="button"><span class="act-spin">✻</span><span class="act-verb">Searched the web, read 3 pages, updated memory</span><span class="act-meta">18s</span></button>
+  <div class="act-steps">
+    <div class="step"><span class="step-tag">WEB</span><span class="step-detail">edge computing latency review 2025</span><span class="step-time">2.1s</span></div>
+    <div class="step"><span class="step-tag">PAGE</span><span class="step-detail">https://doi.org/10.1109/…/edge-survey</span><span class="step-time">3.4s</span></div>
+    <div class="step"><span class="step-tag">PAGE</span><span class="step-detail">arxiv.org/abs/2403.01234</span><span class="step-time">2.9s</span></div>
+    <div class="step"><span class="step-tag">MEMORY</span><span class="step-detail">Rofi is writing a thesis on edge computing</span><span class="step-time">0.4s</span></div>
+  </div></div>`;
+const chatBody = `
+  <div class="msg-user">Cari 3 paper terbaru tentang edge computing buat bab 2 skripsiku, terus rangkum jadi satu halaman Word.</div>
+  ${STEPS(true)}
+  <div class="msg-assistant">
+    <p>Sudah. Aku ambil tiga sumber yang benar-benar kebuka, dan tautannya sudah kucek satu per satu.</p>
+    <h3>Ringkasan</h3>
+    <ul><li><strong>Latensi turun 38%</strong> bila inferensi dipindah ke node tepi (Survey 2025).</li><li>Tradeoff utamanya energi, bukan akurasi.</li><li>Dua dari tiga makalah memakai dataset terbuka, jadi bisa direplikasi.</li></ul>
+    <div class="file-card"><div class="file-card-head"><span class="file-chip-kind">docx</span><span class="file-chip-text"><div class="file-chip-name">Bab 2 - Edge Computing.docx<span class="file-chip-links links-ok">3/3 links verified ✓</span></div><div class="file-chip-meta">1 page · Word, PDF</div></span><button class="cc-btn cc-btn-secondary btn-sm" type="button">Preview</button><button class="cc-btn cc-btn-secondary btn-sm" type="button">Word</button><button class="cc-btn cc-btn-secondary btn-sm" type="button">PDF</button></div></div>
+  </div>
+  <div class="msg-actions"><button class="msg-action" type="button">Copy</button><button class="msg-action" type="button">PDF</button><button class="msg-action" type="button">Word</button></div>`;
+$chat = `<div class="shell">${sidebar(0)}
+  <main class="main"><header class="topbar"><button class="cc-btn cc-btn-ghost btn-sm" style="margin-left:auto" type="button">Share</button><button class="cc-btn cc-btn-ghost btn-sm" type="button">Summary</button></header>
+  <section class="view"><div class="thread"><div class="thread-inner">${chatBody}</div></div>${composer('Reply…')}</section></main></div>`;
+
+// 03 Live
+$live = `<div class="shell side-closed"><main class="main"><header class="topbar"><button class="icon-btn menu-btn" type="button">${ICON.sidebar}</button></header>
+  <section class="view"><div class="thread"><div class="thread-inner">
+    <div class="msg-user">Kerjain tugas modul 5 pakai template gw.</div>
+    <div class="activity live"><button class="act-head" type="button"><span class="act-spin" id="spark">✻</span><span class="act-verb" id="verb">Simmering for Rofi…</span><span class="act-meta">24s</span></button>
+      <div class="act-steps">
+        <div class="step"><span class="step-tag">READ</span><span class="step-detail">Format Laporan PSO.docx</span><span class="step-time">0.3s</span></div>
+        <div class="step"><span class="step-tag">SANDBOX</span><span class="step-detail">gcc fcfs.c -o fcfs &amp;&amp; ./fcfs</span><span class="step-time">1.3s</span></div>
+        <div class="step running"><span class="step-tag">WRITE</span><span class="step-detail">Laporan Modul 5.docx</span><span class="step-time"></span></div>
+      </div></div>
+  </div></div>${composer('Reply…')}</section></main></div>`;
+
+// 04 Settings
+$settings = `<div class="shell">${sidebar(1)}<main class="main"><section class="view"><div class="thread"><div class="thread-inner">${chatBody}</div></div></section></main></div>
+  <div class="scrim"></div>
+  <div class="settings" open>
+    <nav class="set-nav"><div class="set-nav-title">Settings</div>
+      <button class="set-nav-item" type="button">${ICON.gear}General</button>
+      <button class="set-nav-item" type="button">${I('<circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-4 4.5-6 8-6s6.500 2 8 6"/>')}Account</button>
+      <button class="set-nav-item" type="button">${ICON.shield}Privacy</button>
+      <button class="set-nav-item" type="button" aria-current="true">${ICON.bulb}Memory</button>
+      <button class="set-nav-item" type="button">${ICON.pulse}System status</button>
+    </nav>
+    <div class="set-main"><button class="icon-btn set-close" type="button">${ICON.close}</button>
+      <div class="set-body">
+        <h3 class="set-h">About you</h3>
+        <div class="set-row"><div class="set-text"><div class="set-label">Name and study</div><div class="set-hint">Learned from your chats</div></div><div class="set-value">Rofi · Informatics student</div></div>
+        <div class="set-row"><div class="set-text"><div class="set-label">Language</div></div><div class="set-value">Indonesian, casual</div></div>
+        <div class="set-row"><div class="set-text"><div class="set-label">Answers</div></div><div class="set-value">Short, results first</div></div>
+        <h3 class="set-h">What it remembers</h3>
+        <div class="set-row set-entry">Writes lab reports in a fixed format (cover, aim, steps, results, conclusion).</div>
+        <div class="set-row set-entry">Thesis topic: edge computing for low-power devices.</div>
+        <div class="set-row set-entry">Prefers real, verified references. Never invent a source.</div>
+        <p class="set-note">Say "forget that …" in any chat and it is removed. Memory is tidied every night.</p>
+      </div></div></div>`;
+
+// 05 Auth
+$login = `<main class="auth"><div class="cc-card cc-e3 auth-card">
+  <div class="brand">${MARK}rofihosted</div><div><h1>Sign in</h1><p>Private access to your assistant.</p></div>
+  <a class="cc-btn cc-btn-secondary google-btn" href="#">${GOOGLE}Continue with Google</a><div class="auth-or">or</div>
+  <div class="field"><label>Username</label><input class="input" value="rofi"></div>
+  <div class="field"><label>Password</label><input class="input" type="password" value="••••••••••••"></div>
+  <button class="cc-btn cc-btn-primary" style="height:44px" type="button">Sign in</button></div></main>`;
+$invite = `<main class="auth"><div class="cc-card cc-e3 cc-glow welcome"><div class="welcome-inner">
+  <img class="welcome-logo" src="../assets/logo/mark.svg" alt=""><span class="cc-pill cc-pill-brand">Invitation</span>
+  <h1>You're in.</h1><p class="welcome-lead"><strong>Rofi</strong> invited you to rofihosted, a private AI assistant that is yours alone.</p>
+  <ul class="perks">
+    <li><span class="perk-dot"></span><span><strong>Your own assistant.</strong> Its conversations stay separate from other members.</span></li>
+    <li><span class="perk-dot"></span><span><strong>It remembers.</strong> Tell it your preferences once.</span></li>
+    <li><span class="perk-dot"></span><span><strong>Web and images.</strong> It can search the web and read pictures you send.</span></li></ul>
+  <div class="welcome-actions"><a class="cc-btn cc-btn-primary welcome-btn" href="#"><span class="google-chip">${GOOGLE.replace('width="18" height="18"', 'width="16" height="16"')}</span>Continue with Google</a>
+  <button class="cc-btn cc-btn-secondary welcome-btn" type="button">Create a username and password</button></div>
+  <p class="auth-note">The server owner can read your conversations. <a href="#">How privacy works here</a></p></div></div></main>`;
+
+// 06 Landing + status
+$landing = `<div style="min-height:100%;display:flex;flex-direction:column">
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:22px 24px;width:min(1040px,100%);margin:0 auto"><div class="brand" style="font-size:1.1rem">${MARK}rofihosted</div><a class="cc-btn cc-btn-secondary" style="height:42px;padding:0 20px;text-decoration:none;font-size:.92rem" href="#">Sign in</a></header>
+  <main style="width:min(1040px,100%);margin:0 auto;padding:30px 24px 0;display:flex;flex-direction:column;gap:30px">
+    <section class="cc-card cc-e3 cc-glow" style="overflow:hidden;padding:60px"><span class="cc-pill cc-pill-brand">Personal server</span>
+      <h1 style="margin:14px 0 16px;font-size:3.8rem;max-width:14ch;position:relative;z-index:1">One tablet. <em style="font-style:normal;color:var(--cc-brand-1)">A real server.</em></h1>
+      <p style="margin:0 0 28px;max-width:52ch;color:var(--cc-tx-2);font-size:1.05rem;position:relative;z-index:1">rofihosted is a personal server and AI assistant running entirely on a Samsung Galaxy Tab A8, connected to the internet through a Cloudflare Tunnel.</p>
+      <div style="display:flex;gap:12px;position:relative;z-index:1"><a class="cc-btn cc-btn-primary" style="height:42px;padding:0 20px;text-decoration:none;font-size:.92rem" href="#">Open the app</a><a class="cc-btn cc-btn-secondary" style="height:42px;padding:0 20px;text-decoration:none;font-size:.92rem" href="#">View status</a></div></section>
+    <section style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+      ${[['Assistant', 'AI that gets things done', 'Reads email, manages the calendar and runs tasks on the server, from the web or Telegram.'], ['Infrastructure', 'Self-healing', 'Every service runs under a supervisor. The tablet recovers on its own after a power or network cut.'], ['Monitoring', 'Checked from outside', 'The server is checked every minute from Cloudflare’s network and the result is shown on the status page.']].map(([e, h, p]) => `<article class="cc-card cc-lift" style="padding:22px;display:flex;flex-direction:column;gap:10px"><span class="cc-eyebrow">${e}</span><h2 style="margin:0;font-size:1.05rem">${h}</h2><p style="margin:0;color:var(--cc-tx-2);font-size:.9rem">${p}</p></article>`).join('')}
+    </section></main></div>`;
+$status = `<div class="mini-status"><div style="display:flex;justify-content:space-between;align-items:center"><div class="brand">${MARK}rofihosted <span style="color:var(--cc-tx-3)">Status</span></div><span class="live"><span class="pulse"></span>Live · updated 4s ago</span></div>
+  <div class="banner2"><div><h2>All systems operational</h2><p>Checked from outside every minute · 90-day history</p></div></div>
+  ${[['Web app', 'app.rofihosted.space'], ['Assistant', 'Hermes gateway'], ['Model gateway', '9router.rofihosted.space/v1']].map(([n, d]) => `<div class="comp"><div class="comp-head"><b>${n}<small>${d}</small></b><span class="state-ok">Operational</span></div><div class="bar">${Array.from({ length: 90 }, (_, k) => `<i class="${k === 41 ? 'w' : ''}"></i>`).join('')}</div><div class="legend"><span>90 days ago</span><span>99.94% uptime</span><span>Today</span></div></div>`).join('')}</div>`;
+
+// 07 Mobile
+const mTop = `<header class="topbar"><button class="icon-btn menu-btn" type="button" style="display:inline-grid">${ICON.sidebar}</button></header>`;
+$mhome = `<div class="shell"><main class="main">${mTop}<section class="view home" id="view-chat"><div class="thread"><div class="thread-inner"><div class="empty"><img class="home-mark" src="../assets/logo/mark.svg" alt=""><h2 class="home-greeting">Evening, Rofi</h2></div></div></div>${composer('What can I do for you?')}
+  <div class="home-below"><div class="suggest"><button class="home-chip" type="button">Check my unread email</button><button class="home-chip" type="button">What's on my calendar today?</button></div><div class="home-label">Jump back in</div>
+  <button class="home-recent" type="button"><span class="home-tile is-unread">${I('<path d="M4 5h16v11H9l-5 4z"/>', 17)}</span><span class="home-recent-text"><span class="home-recent-title">Check my unread email</span><span class="home-recent-meta"><span class="home-flag">Unread</span> · 12 min ago</span></span></button></div></section></main></div>`;
+$mchat = `<div class="shell"><main class="main">${mTop}<section class="view"><div class="thread"><div class="thread-inner"><div class="msg-user">Cari 3 paper edge computing, rangkum jadi Word.</div>${STEPS(false)}<div class="msg-assistant"><p>Sudah. Tiga sumber, semua tautannya kebuka.</p><div class="file-card"><div class="file-card-head"><span class="file-chip-kind">docx</span><span class="file-chip-text"><div class="file-chip-name">Bab 2.docx</div><div class="file-chip-meta">3/3 links ✓</div></span></div></div></div></div></div>${composer('Reply…')}</section></main></div>`;
+$mside = `<div class="shell">${sidebar(1).replace('<aside class="side">', '<aside class="side open" style="position:absolute;transform:none;width:300px">')}<main class="main" style="opacity:.4">${mTop}<section class="view"><div class="thread"><div class="thread-inner"><div class="msg-user">Cari 3 paper…</div></div></div></section></main></div>`;
+
+const put = (id, html) => (document.getElementById(id).innerHTML = html);
+put('f-home', $home); put('f-chat', $chat); put('f-live', $live); put('f-settings', $settings);
+put('f-login', $login); put('f-invite', $invite); put('f-landing', $landing); put('f-status', $status);
+put('f-m-home', $mhome); put('f-m-chat', $mchat); put('f-m-side', $mside);
+document.querySelectorAll('#f-m-home .shell,#f-m-chat .shell,#f-m-side .shell').forEach((s) => (s.style.gridTemplateColumns = 'minmax(0,1fr)'));
+document.querySelectorAll('#f-m-home .thread-inner,#f-m-chat .thread-inner').forEach((s) => (s.style.maxWidth = '100%'));
+document.querySelectorAll('.activity.done:not(.collapsed) .act-steps').forEach(() => {});
+document.querySelectorAll('.activity.live').forEach((a) => a.classList.remove('collapsed'));
+
+// Spark and verb cycle, same frames and verbs as app.js / transcript.js
+const FRAMES = ['·', '✢', '✳', '✶', '✻', '✽', '✻', '✶', '✳', '✢'], VERBS = ['Pondering', 'Brewing', 'Simmering', 'Tinkering', 'Assembling', 'Weighing', 'Weaving', 'Tracing', 'Concocting', 'Noodling'];
+let n = 0;
+setInterval(() => { const s = document.getElementById('spark'); if (s) s.textContent = FRAMES[++n % FRAMES.length]; }, 120);
+let v = 2;
+setInterval(() => { const e = document.getElementById('verb'); if (e) e.textContent = `${VERBS[++v % VERBS.length]}${v % 3 === 0 ? ' for Rofi' : ''}…`; }, 3000);
+
+// Fit frames to the window unless ?z=1
+const z = parseFloat(new URLSearchParams(location.search).get('z')) || Math.min(1, (innerWidth - 80) / 1440);
+document.querySelectorAll('.stage').forEach((s) => { s.style.zoom = z; });
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "rofihosted-motion-specs",
+  "description": "Mathematical motion and animation specifications for Remotion, After Effects, and Premiere Pro video production.",
+  "frameRates": [24, 30, 60],
+  "easings": {
+    "standardDecel": {
+      "name": "cc-ease",
+      "cubicBezier": [0.22, 1.0, 0.36, 1.0],
+      "css": "cubic-bezier(0.22, 1, 0.36, 1)",
+      "afterEffectsKeyframeVelocity": { "in": 85, "out": 15 },
+      "remotionEasing": "Easing.bezier(0.22, 1.0, 0.36, 1.0)",
+      "purpose": "All smooth card reveals, page transitions, camera zoom stops"
+    },
+    "tactileSpring": {
+      "name": "cc-ease-spring",
+      "cubicBezier": [0.34, 1.4, 0.5, 1.0],
+      "css": "cubic-bezier(0.34, 1.4, 0.5, 1)",
+      "springConfig": {
+        "mass": 0.8,
+        "stiffness": 180,
+        "damping": 14
+      },
+      "purpose": "Popovers, dialogs, button release overshoot, badge appearances"
+    }
+  },
+  "durations": {
+    "micro": {
+      "ms": 150,
+      "framesAt24fps": 4,
+      "framesAt30fps": 5,
+      "framesAt60fps": 9,
+      "usage": "Hover states, button press depth, toggle switches"
+    },
+    "transition": {
+      "ms": 240,
+      "framesAt24fps": 6,
+      "framesAt30fps": 7,
+      "framesAt60fps": 14,
+      "usage": "Menu flyouts, card lifts, drawer open/close"
+    },
+    "entrance": {
+      "ms": 380,
+      "framesAt24fps": 9,
+      "framesAt30fps": 11,
+      "framesAt60fps": 23,
+      "usage": "Modal dialog popups, page component reveals, toast notifications"
+    }
+  },
+  "signatureAnimations": {
+    "sparkCycle": {
+      "frameIntervalMs": 120,
+      "framesAt60fps": 7,
+      "glyphs": ["·", "✢", "✳", "✶", "✻", "✽", "✻", "✶", "✳", "✢"],
+      "restingGlyph": "✻",
+      "restingOpacity": 0.6
+    },
+    "textShimmerSweep": {
+      "cycleDurationMs": 1800,
+      "framesAt60fps": 108,
+      "curve": "linear",
+      "gradientStops": [
+        { "stop": "0%", "color": "var(--cc-tx-3)" },
+        { "stop": "50%", "color": "var(--cc-tx-1)" },
+        { "stop": "100%", "color": "var(--cc-tx-3)" }
+      ]
+    },
+    "stepPulse": {
+      "cycleDurationMs": 1400,
+      "framesAt60fps": 84,
+      "curve": "easeInOut",
+      "minOpacity": 0.35,
+      "maxOpacity": 1.0
+    }
+  },
+  "cameraMovements": {
+    "macroProductDrift": {
+      "durationFramesAt60fps": 180,
+      "zoomStart": 1.0,
+      "zoomEnd": 1.08,
+      "panPixelsX": -40,
+      "easing": "cubic-bezier(0.25, 0.1, 0.25, 1.0)"
+    },
+    "uiWhipPan": {
+      "durationFramesAt60fps": 18,
+      "blurStrength": 24,
+      "easing": "cubic-bezier(0.7, 0, 0.3, 1)"
+    }
+  }
+}
