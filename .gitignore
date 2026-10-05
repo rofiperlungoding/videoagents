@@ -15,3 +15,4 @@ videos/*/renders/clip_*.mp4
 videos/*/renders/*.tmp.mp4
 
 videos/*/refs/
+videos/*/renders/*_master.mp4
