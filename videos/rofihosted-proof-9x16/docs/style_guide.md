@@ -1,4 +1,4 @@
-# Style guide: rofihosted "The Proof" (60 s, 9:16)
+# Style guide: rofihosted "The Proof" (57 s, 9:16)
 
 Sources: `brands/rofihosted/` (GUIDELINES.md, tokens/tokens.json, PUNCHLINES.md, exports/screens, assets/logo)
 and `docs/reference_notes.md` (Numtera, Google, Doks.AI, NeuraFlow, LangEase, Sber).
@@ -26,9 +26,9 @@ Light rhythm = OLED black ↔ lime flood (the brand has no white mode, so lime p
   it always types, builds, pulls focus or is flown through.
 
 ## 3. Rhythm
-112 BPM (between Numtera 108 and Doks/LangEase 118), 4/4, 28 bars = 60.0 s. One idea per 2–4 beats.
-Intro bars 1–4 quiet and rising, **drop on bar 5 = "Meet rofihosted"**, proof bars 5–18, breakdown bars 19–20,
-memory bars 21–22, build 23–24, climax 25–26, logo + CTA 27–28.
+118 BPM (the user's target track; Doks/LangEase also sit at 118), 4/4, 28 bars = 57.0 s. One idea per 2–4 beats.
+Full energy from frame 0 (no quiet intro), **braam on "Meet rofihosted"** (bar 5), proof bars 5–19, groove thins
+bars 20–21, memory dip bars 22–23, turn + climax 24–26, logo + CTA 27–28.
 
 ## 4. Transitions (allowed vocabulary)
 Camera through a word · focus pull (blur → sharp) · giant motion-blurred word shrinking into place ·
@@ -51,10 +51,8 @@ rotations ≤ 22°), parallax between a blurred background layer and a sharp for
 In: type-on with a lime caret, rise through a mask, focus pull, giant-to-settled. Out: fly through, lift through the
 mask, collapse into the next object, flood. A pure fade is never an enter or exit.
 
-## 8. Sound (measured from the refs: no voice, bass-heavy, minor key, steady once it drops)
-Original score in A minor at 112 BPM (`scripts/score.py`): sub drone + ticking pulse + sparse piano in the intro with
-a filter rise and a reverse swell; on the drop a punchy kick, clap, 16th hats, side-chained pluck bass, mallet/pluck
-motif and chord stabs; impacts (boom + crash) on the drop and every section change; breakdown with piano and a soft
-pad; snare roll + riser into the climax; a braam on "Host it."; final chord and the brand's **wooden bell** under the
-logo. UI foley from `timeline.sfx`: typing ticks, clicks, whooshes on flights, pops, a chime when the task completes.
-Master −14 LUFS (platforms normalise there; refs sat at −10…−16).
+## 8. Sound (styled after the user's target track: no voice, percussion-driven, loud and flat)
+Original score at 118 BPM (`scripts/score.py` v3, see the Music section in `shotlist.md`): full energy from the first
+frame, 8th-note hits + toms + an impact every bar, a dark B cluster instead of chords, braams on the drop and on
+"Host it.", the brand's **wooden bell** under the logo. UI foley from `timeline.sfx`: typing ticks, clicks, whooshes on
+flights, pops, a chime when the task completes. Master −14 LUFS.

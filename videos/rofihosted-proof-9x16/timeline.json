@@ -1,15 +1,15 @@
 {
   "note": "Single source of truth for picture + sound. Everything is in BEATS on the measured grid (beats.json). film.js reads marks via data.js; sync.mjs turns sfx events into cues.json; music.py reads music.sections.",
-  "title": "rofihosted: The Proof (60 s, 9:16)",
-  "duration": 60,
+  "title": "rofihosted: The Proof (57 s, 9:16)",
+  "duration": 57,
   "fps": 60,
-  "bpm": 112,
+  "bpm": 118,
   "formats": [
     "9x16"
   ],
   "music": {
-    "source": "score.py (custom cinematic score)",
-    "key": "A minor",
+    "source": "score.py v3 (original, styled after the user-supplied teaser track)",
+    "key": "B (dark cluster)",
     "chords": [
       "Am",
       "F",
