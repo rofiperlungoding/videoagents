@@ -1,0 +1,13 @@
+{
+  "USB-C cable clicks in": [900, 640, 760, 440],
+  "screen wakes": [1130, 400, 340, 320],
+  "layer Linux": [130, 430, 820, 90],
+  "layer sandbox": [130, 538, 820, 90],
+  "layer gateway": [130, 646, 820, 90],
+  "layer memory": [130, 754, 820, 90],
+  "layer tunnel": [130, 862, 820, 90],
+  "send": [1150, 330, 500, 300],
+  "step 4 compiled": [660, 560, 1180, 200],
+  "lamp off": [0, 0, 1920, 1080],
+  "mark pops": [640, 490, 240, 220]
+}
