@@ -46,6 +46,8 @@
   .tag { font-family: 'Mono', monospace; font-weight: 700; color: var(--lime-1); letter-spacing: 0.04em; }
   .hud { position: absolute; font-family: 'Mono', monospace; font-size: 40px; color: var(--ink); white-space: nowrap; }
   .hud b { color: var(--accent); font-weight: 500; }
+  #gl { position: absolute; left: 0; top: 0; }
+  .ae { position: absolute; white-space: nowrap; }
   body.play { display: block; }
 </style>
 </head>
@@ -55,6 +57,7 @@
 <script src="data.js"></script>
 <script src="core.js"></script>
 <script src="type.js"></script>
-<script src="film.js"></script>
+<script type="importmap">{ "imports": { "three": "./lib/three/three.module.js", "three/addons/": "./lib/three/addons/" } }</script>
+<script type="module" src="film.js"></script>
 </body>
 </html>
