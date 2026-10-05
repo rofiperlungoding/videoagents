@@ -8,7 +8,7 @@ description: Produce a beat-synced product launch reel / showreel / promo video 
 A film is a pure function of time. `window.seek(t)` paints frame t in headless Chromium, and ffmpeg encodes it. Picture and sound share one `timeline.json` in beats on a measured grid.
 
 **Read before building:** [reference/RULES.md](reference/RULES.md) (contract, look, rhythm, motion, sound).
-**Also here:** [reference/ENGINE.md](reference/ENGINE.md) (engine API, patterns, commands), [reference/AUDIO.md](reference/AUDIO.md) (music, grid, SFX, VO, mix), [reference/CRITIQUE.md](reference/CRITIQUE.md) (critic prompt).
+**Also here:** [reference/REFERENCE.md](reference/REFERENCE.md) (follow a reference ad closely, for our product), [reference/ENGINE.md](reference/ENGINE.md) (engine API, patterns, commands), [reference/AUDIO.md](reference/AUDIO.md) (music, grid, SFX, VO, mix), [reference/CRITIQUE.md](reference/CRITIQUE.md) (critic prompt).
 **Toolchain:** node + playwright (chromium), ffmpeg, python3 with numpy, scipy, soundfile, librosa and pillow. `init.sh` checks them.
 
 ## 0. Intake
@@ -37,14 +37,15 @@ Parallel sessions may run the same brief. `init.sh` refuses an existing folder, 
 node scripts/capture.mjs <url> --sections "Feature A,Feature B,Get started"
 ```
 This gathers real screenshots, font files, colours, CSS variables, logos and the OG image into `assets/`. Add anything the user supplies. Point `film/index.html` `@font-face` at the real display and UI faces, and set the `:root` tokens.
-If a reference film is given, extract frames and cuts:
+If a reference is given (YouTube/Vimeo/X link, MP4, screen recording), watch it with the analyzer:
 ```
-ffmpeg -i ref.mp4 -vf fps=2 refs/frames/f_%03d.jpg
-ffmpeg -i ref.mp4 -vf "select='gt(scene,0.3)',showinfo" -f null - 2>&1 | grep pts_time
+python3 scripts/ref.py "<url or file>" --name <short-name>     → refs/<name>/ (shots, contact sheets, analysis.json, reference_map.md)
 ```
+Then follow [reference/REFERENCE.md](reference/REFERENCE.md): LOOK at every shot, fill `reference_map.md`, match the
+rhythm and transitions exactly, personalise every word, image and colour to our product.
 
 ## 3. Style guide
-Write `docs/style_guide.md` from the template: palette (measured hex and source), type, rhythm (the reference's measured shot table), transitions, camera, texture, text in/out, and sound. Take the reference's grammar, never its content.
+Write `docs/style_guide.md` from the template: palette (measured hex and source), type, rhythm (the reference's measured shot table from `refs/<name>/shots.md`), transitions, camera, texture, text in/out, and sound. Take the reference's grammar, never its content.
 
 ## 4. Beat grid
 Set the bpm, duration and marks in `timeline.json`. Then:
@@ -54,7 +55,7 @@ Set the bpm, duration and marks in `timeline.json`. Then:
 Then run `node scripts/sync.mjs`. Details: AUDIO.md §1.
 
 ## 5. Shotlist, then STOP for the OK
-Write `docs/shotlist.md` from the template. Each shot needs beats and time, exact on-screen text, motion and transition, the SFX mark, the exact VO line, and 9:16 notes. It must satisfy the rules: hook by 2 s, something new every 2–4 s, end card ≤ 2 s.
+Write `docs/shotlist.md` from the template. Each shot needs beats and time, exact on-screen text, motion and transition, the SFX mark, the exact VO line, and 9:16 notes. It must satisfy the rules: hook by 2 s, something new every 2–4 s, end card ≤ 2 s. With a reference, add a `ref #` column and build the rows from `refs/<name>/reference_map.md`.
 
 Send the user a short summary: shotlist table, palette, fonts, music plan, VO voice, and the VO credit cost if any. **Wait for an explicit OK.** Build nothing until then. Mark the shotlist APPROVED, and reflect every change the user asks for.
 

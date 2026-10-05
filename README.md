@@ -13,6 +13,8 @@ Get weekly updates on the latest AI workflows to 10x your productivity: https://
 > npm run doctor                                            # toolchain check
 > npm run new -- videos/my-ad --preset presets/blank        # scaffold a film, then follow AGENTS.md
 > ```
+> **Follow a reference ad** ("like this Apple ad, but for our product"): `python3 scripts/ref.py <youtube link or video file>`
+> inside the film folder watches it shot by shot; see `prompts/15-follow-a-reference.md`.
 
 # Motion Reel Kit
 

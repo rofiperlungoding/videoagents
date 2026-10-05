@@ -9,4 +9,5 @@ command -v python3 >/dev/null && ok "python3 $(python3 -c 'import sys;print(sys.
 python3 -c "import numpy, scipy, soundfile, librosa, PIL" 2>/dev/null && ok "python libs" || bad "python libs missing → pip install -r requirements.txt"
 node -e "require.resolve('playwright')" 2>/dev/null && ok "playwright" || bad "playwright missing → npm install"
 node -e "require('playwright').chromium.launch().then(b=>b.close())" 2>/dev/null && ok "chromium launches" || bad "chromium missing → npx playwright install chromium"
+command -v yt-dlp >/dev/null && ok "yt-dlp (reference downloads)" || printf "  · yt-dlp not installed (optional: pip install yt-dlp, or pass reference videos as files)\n"
 [ $FAIL = 0 ] && echo "ready. next: npm test (5 s smoke render)" || { echo "fix the ✗ lines above"; exit 1; }

@@ -13,3 +13,5 @@ videos/*/review/
 videos/*/renders/draft_*.mp4
 videos/*/renders/clip_*.mp4
 videos/*/renders/*.tmp.mp4
+
+videos/*/refs/

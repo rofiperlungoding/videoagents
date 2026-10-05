@@ -20,7 +20,7 @@ fi
 mkdir -p "$DEST"/film/lib "$DEST"/scripts "$DEST"/docs "$DEST"/audio/vo "$DEST"/assets/fonts "$DEST"/assets/brand "$DEST"/assets/cap "$DEST"/renders "$DEST"/review
 cp "$SKILL"/engine/index.html "$SKILL"/engine/core.js "$SKILL"/engine/type.js "$SKILL"/engine/film.js "$DEST"/film/
 cp "$SKILL"/engine/lib/motion.js "$SKILL"/engine/lib/motion.test.js "$DEST"/film/lib/
-for f in render.mjs sync.mjs sfx.mjs capture.mjs beats.py music.py vo.py mix.py review.py preset.mjs sync_roi.mjs; do cp "$SKILL/scripts/$f" "$DEST/scripts/"; done
+for f in render.mjs sync.mjs sfx.mjs capture.mjs beats.py music.py vo.py mix.py review.py preset.mjs sync_roi.mjs ref.py; do cp "$SKILL/scripts/$f" "$DEST/scripts/"; done
 cp "$SKILL"/templates/brief.md "$SKILL"/templates/timeline.json "$DEST"/
 cp "$SKILL"/templates/docs/*.md "$DEST"/docs/
 date -u +"created %Y-%m-%dT%H:%M:%SZ by motion-reel init" > "$DEST"/.owner

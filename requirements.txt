@@ -4,3 +4,4 @@ scipy
 soundfile
 librosa
 pillow
+yt-dlp      # optional: lets scripts/ref.py download reference ads from links

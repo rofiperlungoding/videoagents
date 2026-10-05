@@ -30,6 +30,7 @@ You are a senior motion designer reviewing a product reel before it goes to the 
 | **Brand accuracy** | Real UI and real logo. Exact colours, the one accent, the real faces. The voice matches the site. None of the reference's content copied. | Invented UI where real UI exists, a wrong font, or a second accent → max 6 |
 | **Sound sync** | Every hit lands with its picture (±45 ms in `metrics.sync`). Whooshes peak on landings. Loudness -14 ±0.5 LUFS, true peak ≤ -1 dBTP. The VO matches the on-screen words. | Hits off by > 80 ms, or loudness off target → max 6 |
 | **Composition (every format)** | Each format is re-blocked, not cropped. No dead zones. Type never centred on an empty field. Depth from perspective and shadow. | 9:16 with a third of the frame empty for > 1 s → max 7 |
+| **Reference fidelity** (only when a reference was given) | Side by side with `refs/<name>/contact_shots.jpg`: same shot lengths (±1 beat), same transition types at the same points, same type behaviour, colour rhythm, camera and sound shape. Nothing of theirs on screen. | Their footage, logo, copy or music used → max 3. A different rhythm (shot lengths off by > 2 beats on most shots) → max 6 |
 | **Polish** | No blank frames (`near_blank_frames`), no double exposures at swaps, no stray carets, no glyph slivers at masks, no orphaned captions. Clean loop seam. | Any blank frame mid-film, or a double-exposed caption → max 7 |
 
 ## Known failure modes: check each one explicitly
