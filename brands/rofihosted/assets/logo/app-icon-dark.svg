@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-<rect width="64" height="64" fill="#0a0b0d"/><defs><radialGradient id="rg" cx="0.72" cy="0.12" r="0.9"><stop offset="0" stop-color="#a3e635" stop-opacity="0.22"/><stop offset="1" stop-color="#a3e635" stop-opacity="0"/></radialGradient></defs><rect width="64" height="64" fill="url(#rg)"/>
-  <mask id="gm" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect x="0" y="0" width="64" height="64" fill="#fff"/><circle cx="46" cy="18" r="9.5" fill="#000"/></mask>
-  <rect x="16" y="16" width="32" height="32" rx="10" fill="none" stroke="#a3e635" stroke-width="7" mask="url(#gm)"/>
-  <circle cx="46" cy="18" r="5" fill="#a3e635"/>
-</svg>
